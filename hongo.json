@@ -1,0 +1,1399 @@
+{
+ "@context": "http://iiif.io/api/presentation/4/context.json",
+ "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json",
+ "type": "Manifest",
+ "label": {
+  "ja": [
+   "東京大学 本郷キャンパス（安田講堂周辺）の点群"
+  ],
+  "en": [
+   "Point cloud of the University of Tokyo Hongo campus (around Yasuda Auditorium)"
+  ]
+ },
+ "summary": {
+  "ja": [
+   "航空レーザー測量の点群（2023年3〜4月計測）を、約 260 × 290 m の範囲で示す。建物の説明は注釈から。"
+  ],
+  "en": [
+   "Airborne LiDAR points (surveyed March-April 2023) over about 260 x 290 m. Buildings are described in the annotations."
+  ]
+ },
+ "requiredStatement": {
+  "label": {
+   "ja": [
+    "出典"
+   ],
+   "en": [
+    "Attribution"
+   ]
+  },
+  "value": {
+   "ja": [
+    "点群: 東京都「東京都デジタルツイン実現プロジェクト 区部点群データ」(CC BY 4.0) を加工。建物の名前と位置: © OpenStreetMap contributors (ODbL)"
+   ],
+   "en": [
+    "Points: Tokyo Metropolitan Government, Tokyo Digital Twin Project, ward-area point cloud (CC BY 4.0), processed. Building names and outlines: © OpenStreetMap contributors (ODbL)"
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+   "type": "Scene",
+   "label": {
+    "ja": [
+     "本郷キャンパス"
+    ],
+    "en": [
+     "Hongo campus"
+    ]
+   },
+   "spatialScale": {
+    "type": "UnitValue",
+    "quantityValue": 1.0,
+    "unit": "m"
+   },
+   "items": [
+    {
+     "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#painting",
+     "type": "AnnotationPage",
+     "items": [
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#model",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "body": {
+        "type": "Choice",
+        "behavior": [
+         "progressive"
+        ],
+        "label": {
+         "ja": [
+          "点群の密度"
+         ],
+         "en": [
+          "Point density"
+         ]
+        },
+        "items": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo-light.glb",
+          "type": "Model",
+          "format": "model/gltf-binary",
+          "label": {
+           "ja": [
+            "軽量"
+           ],
+           "en": [
+            "light"
+           ]
+          }
+         },
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo-mid.glb",
+          "type": "Model",
+          "format": "model/gltf-binary",
+          "label": {
+           "ja": [
+            "中"
+           ],
+           "en": [
+            "medium"
+           ]
+          }
+         },
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo-full.glb",
+          "type": "Model",
+          "format": "model/gltf-binary",
+          "label": {
+           "ja": [
+            "高精細"
+           ],
+           "en": [
+            "full"
+           ]
+          }
+         }
+        ]
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 0,
+          "y": 0,
+          "z": 0
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#overview",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "label": {
+         "ja": [
+          "全体"
+         ],
+         "en": [
+          "Overview"
+         ]
+        },
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 0,
+          "y": 220,
+          "z": 300
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "annotations": [
+    {
+     "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#notes",
+     "type": "AnnotationPage",
+     "items": [
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704424",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "化学本館"
+        ],
+        "en": [
+         "Chemistry Main Building"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>1962年完成。化学教室100周年の寄付で建てられた。当時は化学新館と呼ばれ、1983年に化学本館と改称。</p><p>出典: <a href=\"https://www.s.u-tokyo.ac.jp/en/story/newsletter/past/19830500_15_1.pdf\" target=\"_blank\" rel=\"noopener\">理学部広報 1983年5月号</a>、<a href=\"https://www.chem.s.u-tokyo.ac.jp/chem_about/department.html\" target=\"_blank\" rel=\"noopener\">化学教室の歩み</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>Completed in 1962, funded by donations marking the chemistry department's centenary. Originally called the New Building, renamed Main Building in 1983.</p><p>Source: <a href=\"https://www.s.u-tokyo.ac.jp/en/story/newsletter/past/19830500_15_1.pdf\" target=\"_blank\" rel=\"noopener\">理学部広報 1983年5月号</a>, <a href=\"https://www.chem.s.u-tokyo.ac.jp/chem_about/department.html\" target=\"_blank\" rel=\"noopener\">化学教室の歩み</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704424/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 92.48,
+          "y": 34.12,
+          "z": -1.37
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704425",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "化学西館"
+        ],
+        "en": [
+         "Chemistry West Building"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": ""
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704425/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 82.5,
+          "y": 39.01,
+          "z": -28.74
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w368510761",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "学生支援センター"
+        ],
+        "en": [
+         "Student Support Center"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>2010年6月完成。地下1階・地上3階。学生の相談や手続きの窓口が入る。</p><p>出典: <a href=\"https://www.u-tokyo.ac.jp/content/400007711.pdf\" target=\"_blank\" rel=\"noopener\">学生支援センター 概要</a>、<a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-plans/b07_05_h22.html\" target=\"_blank\" rel=\"noopener\">完成した主な建物 平成22年度</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>Completed June 2010 (three floors above ground, one below). Offices for student services.</p><p>Source: <a href=\"https://www.u-tokyo.ac.jp/content/400007711.pdf\" target=\"_blank\" rel=\"noopener\">学生支援センター 概要</a>, <a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-plans/b07_05_h22.html\" target=\"_blank\" rel=\"noopener\">完成した主な建物 平成22年度</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w368510761/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 114.64,
+          "y": 22.36,
+          "z": 27.99
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w134668789",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "安田講堂"
+        ],
+        "en": [
+         "Yasuda Auditorium"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>1925年竣工。設計は内田祥三と岸田日出刀。安田善次郎の寄附で建ち、2014年末に全面改修。卒業式など重要行事の会場。登録有形文化財第1号。</p><p>出典: <a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-guide/b07_04_b.html\" target=\"_blank\" rel=\"noopener\">国の登録有形文化財 登録</a>、<a href=\"https://www.schoolexcellence.p.u-tokyo.ac.jp/wp/wp-content/uploads/2023/06/16ac4d38d9985b352b4f90d007fefe86.pdf\" target=\"_blank\" rel=\"noopener\">本郷地区キャンパスマップ 2023年度版</a>、<a href=\"https://www.u-tokyo.ac.jp/focus/ja/articles/t_z0508_00089.html\" target=\"_blank\" rel=\"noopener\">写真でたどる昔と今の建造物（淡青36号より）</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>Completed in 1925 to designs by Uchida Yoshikazu and Kishida Hideto, funded by Yasuda Zenjiro. It hosts graduation and other major ceremonies and was the first registered tangible cultural property (1996).</p><p>Source: <a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-guide/b07_04_b.html\" target=\"_blank\" rel=\"noopener\">国の登録有形文化財 登録</a>, <a href=\"https://www.schoolexcellence.p.u-tokyo.ac.jp/wp/wp-content/uploads/2023/06/16ac4d38d9985b352b4f90d007fefe86.pdf\" target=\"_blank\" rel=\"noopener\">本郷地区キャンパスマップ 2023年度版</a>, <a href=\"https://www.u-tokyo.ac.jp/focus/ja/articles/t_z0508_00089.html\" target=\"_blank\" rel=\"noopener\">写真でたどる昔と今の建造物（淡青36号より）</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w134668789/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 24.63,
+          "y": 35.64,
+          "z": -52.7
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w142583749",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "山上会館"
+        ],
+        "en": [
+         "Sanjo Conference Hall"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>1986年竣工。関東大震災で焼失した山上会議所の跡地に建つ。会議室とレストランをもつ。</p><p>出典: <a href=\"https://www.u-tokyo.ac.jp/focus/ja/articles/t_z0508_00089.html\" target=\"_blank\" rel=\"noopener\">写真でたどる昔と今の建造物（淡青36号より）</a>、<a href=\"https://www.u-tokyo.ac.jp/content/400293843.pdf\" target=\"_blank\" rel=\"noopener\">全面改修・改築予定建物一覧（2026年6月時点）</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>Completed in 1986 on the site of the earlier Sanjo conference hall lost in the 1923 earthquake. Has meeting rooms and a restaurant.</p><p>Source: <a href=\"https://www.u-tokyo.ac.jp/focus/ja/articles/t_z0508_00089.html\" target=\"_blank\" rel=\"noopener\">写真でたどる昔と今の建造物（淡青36号より）</a>, <a href=\"https://www.u-tokyo.ac.jp/content/400293843.pdf\" target=\"_blank\" rel=\"noopener\">全面改修・改築予定建物一覧（2026年6月時点）</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w142583749/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 61.13,
+          "y": 26.27,
+          "z": 97.39
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r9693129",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "工学部2号館"
+        ],
+        "en": [
+         "Faculty of Engineering Building 2"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>内田祥三が構内で最初に設計した建物で、1924年竣工。2005年に旧館の上に高層の新館を載せる形で拡充された。</p><p>出典: <a href=\"https://www.u-tokyo.ac.jp/focus/ja/articles/t_z0508_00089.html\" target=\"_blank\" rel=\"noopener\">写真でたどる昔と今の建造物（淡青36号より）</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>The first campus building designed by Uchida Yoshikazu, completed 1924. In 2005 a high-rise new wing was built over the old building.</p><p>Source: <a href=\"https://www.u-tokyo.ac.jp/focus/ja/articles/t_z0508_00089.html\" target=\"_blank\" rel=\"noopener\">写真でたどる昔と今の建造物（淡青36号より）</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r9693129/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -15.95,
+          "y": 62.49,
+          "z": -145.49
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r1682271",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "工学部6号館"
+        ],
+        "en": [
+         "Faculty of Engineering Building 6"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>1938年建築。法文1・2号館と同じく、戦後に屋上階が増築された。物理工学科・物理工学専攻が入る。</p><p>出典: <a href=\"https://www.u-tokyo.ac.jp/content/400293843.pdf\" target=\"_blank\" rel=\"noopener\">全面改修・改築予定建物一覧（2026年6月時点）</a>、<a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-guide/b07_04_b.html\" target=\"_blank\" rel=\"noopener\">国の登録有形文化財 登録</a>、<a href=\"https://www.ap.t.u-tokyo.ac.jp/access.html\" target=\"_blank\" rel=\"noopener\">アクセス（物理工学科）</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>Built 1938. Like Law & Letters Buildings 1 and 2, it received a rooftop addition after the war. Home to the Department of Applied Physics.</p><p>Source: <a href=\"https://www.u-tokyo.ac.jp/content/400293843.pdf\" target=\"_blank\" rel=\"noopener\">全面改修・改築予定建物一覧（2026年6月時点）</a>, <a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-guide/b07_04_b.html\" target=\"_blank\" rel=\"noopener\">国の登録有形文化財 登録</a>, <a href=\"https://www.ap.t.u-tokyo.ac.jp/access.html\" target=\"_blank\" rel=\"noopener\">アクセス（物理工学科）</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r1682271/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -83.88,
+          "y": 35.1,
+          "z": -128.32
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w224633163",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "文学部3号館"
+        ],
+        "en": [
+         "Faculty of Letters Building 3"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>1987年竣工。法文1号館のゴシック様式の意匠を受け継ぐ。図書室と文学部の各研究室が入る。</p><p>出典: <a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-guide/b07_04_b.html\" target=\"_blank\" rel=\"noopener\">国の登録有形文化財 登録</a>、<a href=\"https://www.u-tokyo.ac.jp/content/400293843.pdf\" target=\"_blank\" rel=\"noopener\">全面改修・改築予定建物一覧（2026年6月時点）</a>、<a href=\"https://www.l.u-tokyo.ac.jp/access.html\" target=\"_blank\" rel=\"noopener\">アクセス（文学部）</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>Completed in 1987, inheriting the Gothic design of Law & Letters Building 1. It holds a library room and Faculty of Letters laboratories.</p><p>Source: <a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-guide/b07_04_b.html\" target=\"_blank\" rel=\"noopener\">国の登録有形文化財 登録</a>, <a href=\"https://www.u-tokyo.ac.jp/content/400293843.pdf\" target=\"_blank\" rel=\"noopener\">全面改修・改築予定建物一覧（2026年6月時点）</a>, <a href=\"https://www.l.u-tokyo.ac.jp/access.html\" target=\"_blank\" rel=\"noopener\">アクセス（文学部）</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w224633163/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -74.73,
+          "y": 49.73,
+          "z": 76.95
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w240758655",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "東京大学総合図書館"
+        ],
+        "en": [
+         "University of Tokyo General Library"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>1928年12月竣工。関東大震災後、ロックフェラー・ジュニアの寄付で再建。内田祥三の設計監督で、鉄骨鉄筋コンクリート造。</p><p>出典: <a href=\"https://www.lib.u-tokyo.ac.jp/ja/library/general/about/history/history_0/history_2\" target=\"_blank\" rel=\"noopener\">図書館再建（震災直後から昭和初期）</a>、<a href=\"https://www.schoolexcellence.p.u-tokyo.ac.jp/wp/wp-content/uploads/2023/06/16ac4d38d9985b352b4f90d007fefe86.pdf\" target=\"_blank\" rel=\"noopener\">本郷地区キャンパスマップ 2023年度版</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>Completed in December 1928, rebuilt after the 1923 earthquake with a donation from John D. Rockefeller Jr., under Uchida Yoshikazu's design supervision.</p><p>Source: <a href=\"https://www.lib.u-tokyo.ac.jp/ja/library/general/about/history/history_0/history_2\" target=\"_blank\" rel=\"noopener\">図書館再建（震災直後から昭和初期）</a>, <a href=\"https://www.schoolexcellence.p.u-tokyo.ac.jp/wp/wp-content/uploads/2023/06/16ac4d38d9985b352b4f90d007fefe86.pdf\" target=\"_blank\" rel=\"noopener\">本郷地区キャンパスマップ 2023年度版</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w240758655/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -117.1,
+          "y": 44.62,
+          "z": 131.91
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w134668792",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "法文1号館"
+        ],
+        "en": [
+         "Law & Letters Building 1"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>西側部分は1929年2月、全体は1935年2月の竣工。尖頭アーチのアーケードをもつ震災復興期の建物。西側は文学部の教室。登録有形文化財。</p><p>出典: <a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-guide/b07_04_b.html\" target=\"_blank\" rel=\"noopener\">国の登録有形文化財 登録</a>、<a href=\"https://www.l.u-tokyo.ac.jp/access.html\" target=\"_blank\" rel=\"noopener\">アクセス（文学部）</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>Western wing completed February 1929, whole building February 1935, as part of the post-earthquake reconstruction. Its western part houses Faculty of Letters classrooms. Registered tangible cultural property.</p><p>Source: <a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-guide/b07_04_b.html\" target=\"_blank\" rel=\"noopener\">国の登録有形文化財 登録</a>, <a href=\"https://www.l.u-tokyo.ac.jp/access.html\" target=\"_blank\" rel=\"noopener\">アクセス（文学部）</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w134668792/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -96.98,
+          "y": 35.26,
+          "z": -57.25
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r6859326",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "法文2号館"
+        ],
+        "en": [
+         "Law & Letters Building 2"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>1938年竣工。設計は内田祥三。三廊式のアーケードが特徴。文学部の事務室と研究室が入り、地下に食堂・購買部。登録有形文化財。</p><p>出典: <a href=\"https://www.u-tokyo.ac.jp/content/400076823.pdf\" target=\"_blank\" rel=\"noopener\">広報誌「淡青」36号</a>、<a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-guide/b07_04_b.html\" target=\"_blank\" rel=\"noopener\">国の登録有形文化財 登録</a>、<a href=\"https://www.l.u-tokyo.ac.jp/access.html\" target=\"_blank\" rel=\"noopener\">アクセス（文学部）</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>Completed in 1938 to a design by Uchida Yoshikazu, with a three-aisle arcade. It houses the Faculty of Letters office and laboratories, plus shops in the basement. Registered tangible cultural property.</p><p>Source: <a href=\"https://www.u-tokyo.ac.jp/content/400076823.pdf\" target=\"_blank\" rel=\"noopener\">広報誌「淡青」36号</a>, <a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-guide/b07_04_b.html\" target=\"_blank\" rel=\"noopener\">国の登録有形文化財 登録</a>, <a href=\"https://www.l.u-tokyo.ac.jp/access.html\" target=\"_blank\" rel=\"noopener\">アクセス（文学部）</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r6859326/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -89.86,
+          "y": 36.07,
+          "z": 13.42
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r19171345",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "理学部1号館 中央棟"
+        ],
+        "en": [
+         "Faculty of Science Building 1, Central Wing"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>2005年に落成した小柴ホール（約200席）がある。</p><p>出典: <a href=\"https://www.u-tokyo.ac.jp/focus/ja/press/p01_170303.html\" target=\"_blank\" rel=\"noopener\">小柴ホール落成記念式典開催</a>、<a href=\"https://www.s.u-tokyo.ac.jp/ja/hall/koshiba.html\" target=\"_blank\" rel=\"noopener\">小柴ホール・共通講義室</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>Houses Koshiba Hall (about 200 seats), opened in 2005.</p><p>Source: <a href=\"https://www.u-tokyo.ac.jp/focus/ja/press/p01_170303.html\" target=\"_blank\" rel=\"noopener\">小柴ホール落成記念式典開催</a>, <a href=\"https://www.s.u-tokyo.ac.jp/ja/hall/koshiba.html\" target=\"_blank\" rel=\"noopener\">小柴ホール・共通講義室</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r19171345/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 116.11,
+          "y": 53.32,
+          "z": -89.59
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w137625393",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "理学部1号館 西棟"
+        ],
+        "en": [
+         "Faculty of Science Building 1, West Wing"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>1998年竣工。地下2階・地上12階。設計は東京大学施設部と日建設計。</p><p>出典: <a href=\"https://www.s.u-tokyo.ac.jp/en/overview/pdf/Bldg1-west-1998.pdf\" target=\"_blank\" rel=\"noopener\">理学部1号館(西棟)の竣工にあたって</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>Completed in 1998, 12 floors above ground and 2 below. Designed by the university's Facilities Department with Nikken Sekkei.</p><p>Source: <a href=\"https://www.s.u-tokyo.ac.jp/en/overview/pdf/Bldg1-west-1998.pdf\" target=\"_blank\" rel=\"noopener\">理学部1号館(西棟)の竣工にあたって</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w137625393/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 84.12,
+          "y": 62.28,
+          "z": -82.21
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704426",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "理学部4号館"
+        ],
+        "en": [
+         "Faculty of Science Building 4"
+        ]
+       },
+       "body": [
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "ja",
+         "value": "<p>理学部の建物。化学専攻・化学科などが入る。2010年度に改修が完成した。</p><p>出典: <a href=\"https://www.s.u-tokyo.ac.jp/ja/access.html\" target=\"_blank\" rel=\"noopener\">アクセス（理学系研究科）</a>、<a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-plans/b07_05_h22.html\" target=\"_blank\" rel=\"noopener\">完成した主な建物 平成22年度</a></p>"
+        },
+        {
+         "type": "TextualBody",
+         "format": "text/html",
+         "language": "en",
+         "value": "<p>A Faculty of Science building used by the Department of Chemistry, among others. Renovated in FY2010.</p><p>Source: <a href=\"https://www.s.u-tokyo.ac.jp/ja/access.html\" target=\"_blank\" rel=\"noopener\">アクセス（理学系研究科）</a>, <a href=\"https://www.u-tokyo.ac.jp/ja/about/campus-plans/b07_05_h22.html\" target=\"_blank\" rel=\"noopener\">完成した主な建物 平成22年度</a></p>"
+        }
+       ],
+       "scope": [
+        "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704426/camera"
+       ],
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 105.39,
+          "y": 41.48,
+          "z": -40.62
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#cameras",
+     "type": "AnnotationPage",
+     "items": [
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704424/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": 92.48,
+         "y": 31.12,
+         "z": -1.37
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 137.48,
+          "y": 89.12,
+          "z": 73.63
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704425/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": 82.5,
+         "y": 36.01,
+         "z": -28.74
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 127.5,
+          "y": 94.01,
+          "z": 46.26
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w368510761/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": 114.64,
+         "y": 19.36,
+         "z": 27.99
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 159.64,
+          "y": 77.36,
+          "z": 102.99
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w134668789/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": 24.63,
+         "y": 32.64,
+         "z": -52.7
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 69.63,
+          "y": 90.64,
+          "z": 22.3
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w142583749/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": 61.13,
+         "y": 23.27,
+         "z": 97.39
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 106.13,
+          "y": 81.27,
+          "z": 172.39
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r9693129/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": -15.95,
+         "y": 59.49,
+         "z": -145.49
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 29.05,
+          "y": 117.49,
+          "z": -70.49
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r1682271/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": -83.88,
+         "y": 32.1,
+         "z": -128.32
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -38.88,
+          "y": 90.1,
+          "z": -53.32
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w224633163/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": -74.73,
+         "y": 46.73,
+         "z": 76.95
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -29.73,
+          "y": 104.73,
+          "z": 151.95
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w240758655/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": -117.1,
+         "y": 41.62,
+         "z": 131.91
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -72.1,
+          "y": 99.62,
+          "z": 206.91
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w134668792/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": -96.98,
+         "y": 32.26,
+         "z": -57.25
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -51.98,
+          "y": 90.26,
+          "z": 17.75
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r6859326/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": -89.86,
+         "y": 33.07,
+         "z": 13.42
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -44.86,
+          "y": 91.07,
+          "z": 88.42
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r19171345/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": 116.11,
+         "y": 50.32,
+         "z": -89.59
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 161.11,
+          "y": 108.32,
+          "z": -14.59
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w137625393/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": 84.12,
+         "y": 59.28,
+         "z": -82.21
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 129.12,
+          "y": 117.28,
+          "z": -7.21
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704426/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "behavior": [
+        "hidden"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": 105.39,
+         "y": 38.48,
+         "z": -40.62
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 150.39,
+          "y": 96.48,
+          "z": 34.38
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
