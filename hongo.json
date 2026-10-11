@@ -1,5 +1,9 @@
 {
- "@context": "http://iiif.io/api/presentation/4/context.json",
+ "@context": [
+  "http://iiif.io/api/extension/georef/1/context.json",
+  "http://iiif.io/api/extension/navplace/context.json",
+  "http://iiif.io/api/presentation/4/context.json"
+ ],
  "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json",
  "type": "Manifest",
  "label": {
@@ -35,6 +39,53 @@
     "Points: Tokyo Metropolitan Government, Tokyo Digital Twin Project, ward-area point cloud (CC BY 4.0), processed. Building names and outlines: © OpenStreetMap contributors (ODbL)"
    ]
   }
+ },
+ "navPlace": {
+  "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#place",
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#place/1",
+    "type": "Feature",
+    "properties": {
+     "label": {
+      "ja": [
+       "模型の範囲"
+      ],
+      "en": [
+       "Extent of the model"
+      ]
+     }
+    },
+    "geometry": {
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        139.7606091,
+        35.7142515
+       ],
+       [
+        139.7634385,
+        35.7142532
+       ],
+       [
+        139.7634408,
+        35.7116573
+       ],
+       [
+        139.7606115,
+        35.7116556
+       ],
+       [
+        139.7606091,
+        35.7142515
+       ]
+      ]
+     ]
+    }
+   }
+  ]
  },
  "items": [
   {
@@ -1387,6 +1438,305 @@
           "x": 150.39,
           "y": 96.48,
           "z": 34.38
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#georef",
+     "type": "AnnotationPage",
+     "items": [
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#georef/1",
+       "type": "Annotation",
+       "motivation": [
+        "georeferencing"
+       ],
+       "body": {
+        "type": "FeatureCollection",
+        "transformation": {
+         "type": "polynomial",
+         "options": {
+          "order": 1
+         }
+        },
+        "features": [
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704424/gcp",
+          "properties": {
+           "title": "化学本館",
+           "resourceCoords": [
+            92.48,
+            34.12,
+            -1.37
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7630471,
+            35.7129674
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704425/gcp",
+          "properties": {
+           "title": "化学西館",
+           "resourceCoords": [
+            82.5,
+            39.01,
+            -28.74
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7629365,
+            35.713214
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w368510761/gcp",
+          "properties": {
+           "title": "学生支援センター",
+           "resourceCoords": [
+            114.64,
+            22.36,
+            27.99
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7632923,
+            35.7127029
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w134668789/gcp",
+          "properties": {
+           "title": "安田講堂",
+           "resourceCoords": [
+            24.63,
+            35.64,
+            -52.7
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7622967,
+            35.7134296
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w142583749/gcp",
+          "properties": {
+           "title": "山上会館",
+           "resourceCoords": [
+            61.13,
+            26.27,
+            97.39
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7627014,
+            35.712077
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r9693129/gcp",
+          "properties": {
+           "title": "工学部2号館",
+           "resourceCoords": [
+            -15.95,
+            62.49,
+            -145.49
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7618475,
+            35.7142657
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r1682271/gcp",
+          "properties": {
+           "title": "工学部6号館",
+           "resourceCoords": [
+            -83.88,
+            35.1,
+            -128.32
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7610969,
+            35.7141105
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w224633163/gcp",
+          "properties": {
+           "title": "文学部3号館",
+           "resourceCoords": [
+            -74.73,
+            49.73,
+            76.95
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7611997,
+            35.7122604
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w240758655/gcp",
+          "properties": {
+           "title": "東京大学総合図書館",
+           "resourceCoords": [
+            -117.1,
+            44.62,
+            131.91
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7607318,
+            35.7117646
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w134668792/gcp",
+          "properties": {
+           "title": "法文1号館",
+           "resourceCoords": [
+            -96.98,
+            35.26,
+            -57.25
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7609526,
+            35.7134698
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r6859326/gcp",
+          "properties": {
+           "title": "法文2号館",
+           "resourceCoords": [
+            -89.86,
+            36.07,
+            13.42
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7610319,
+            35.7128329
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-r19171345/gcp",
+          "properties": {
+           "title": "理学部1号館 中央棟",
+           "resourceCoords": [
+            116.11,
+            53.32,
+            -89.59
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7633075,
+            35.7137627
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w137625393/gcp",
+          "properties": {
+           "title": "理学部1号館 西棟",
+           "resourceCoords": [
+            84.12,
+            62.28,
+            -82.21
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.762954,
+            35.713696
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#osm-w458704426/gcp",
+          "properties": {
+           "title": "理学部4号館",
+           "resourceCoords": [
+            105.39,
+            41.48,
+            -40.62
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7631894,
+            35.7133212
+           ]
+          }
+         }
+        ]
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/hongo.json#scene",
+          "type": "Scene"
          }
         ]
        }

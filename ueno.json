@@ -1,0 +1,359 @@
+{
+ "@context": [
+  "http://iiif.io/api/extension/georef/1/context.json",
+  "http://iiif.io/api/extension/navplace/context.json",
+  "http://iiif.io/api/presentation/4/context.json"
+ ],
+ "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json",
+ "type": "Manifest",
+ "label": {
+  "ja": [
+   "上野駅周辺の点群と PLATEAU 建物モデルの比較"
+  ],
+  "en": [
+   "Ueno station area: LiDAR points and PLATEAU buildings compared"
+  ]
+ },
+ "summary": {
+  "ja": [
+   "同じ約 260 × 290 m の範囲を、航空レーザー測量の点群（2023年3〜4月計測）と、PLATEAU の建物モデル（LOD2・空中写真のテクスチャつき）で示す。左下の切り替えで見比べられる。"
+  ],
+  "en": [
+   "The same area of about 260 x 290 m as airborne LiDAR points (surveyed March-April 2023) and as PLATEAU building models (LOD2, textured from aerial photos). Switch between them."
+  ]
+ },
+ "requiredStatement": {
+  "label": {
+   "ja": [
+    "出典"
+   ],
+   "en": [
+    "Attribution"
+   ]
+  },
+  "value": {
+   "ja": [
+    "点群: 東京都「東京都デジタルツイン実現プロジェクト 区部点群データ」(CC BY 4.0) を加工。建物: 国土交通省 Project PLATEAU「3D都市モデル（台東区）2025年度」を加工。"
+   ],
+   "en": [
+    "Points: Tokyo Metropolitan Government, Tokyo Digital Twin Project, ward-area point cloud (CC BY 4.0), processed. Buildings: MLIT Project PLATEAU, 3D city model of Taito-ku (FY2025), processed."
+   ]
+  }
+ },
+ "navPlace": {
+  "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#place",
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#place/1",
+    "type": "Feature",
+    "properties": {
+     "label": {
+      "ja": [
+       "模型の範囲"
+      ],
+      "en": [
+       "Extent of the model"
+      ]
+     }
+    },
+    "geometry": {
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        139.7765915,
+        35.7132506
+       ],
+       [
+        139.7794208,
+        35.7132519
+       ],
+       [
+        139.7794226,
+        35.710656
+       ],
+       [
+        139.7765933,
+        35.7106547
+       ],
+       [
+        139.7765915,
+        35.7132506
+       ]
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ "items": [
+  {
+   "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+   "type": "Scene",
+   "label": {
+    "ja": [
+     "上野駅周辺"
+    ],
+    "en": [
+     "Around Ueno station"
+    ]
+   },
+   "spatialScale": {
+    "type": "UnitValue",
+    "quantityValue": 1.0,
+    "unit": "m"
+   },
+   "items": [
+    {
+     "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#painting",
+     "type": "AnnotationPage",
+     "items": [
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#model",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "body": {
+        "type": "Choice",
+        "label": {
+         "ja": [
+          "表示する模型"
+         ],
+         "en": [
+          "Model"
+         ]
+        },
+        "items": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/plateau-ueno.glb",
+          "type": "Model",
+          "format": "model/gltf-binary",
+          "label": {
+           "ja": [
+            "PLATEAU LOD2（写真つき）"
+           ],
+           "en": [
+            "PLATEAU LOD2 (textured)"
+           ]
+          }
+         },
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno-points-light.glb",
+          "type": "Model",
+          "format": "model/gltf-binary",
+          "label": {
+           "ja": [
+            "点群（軽量）"
+           ],
+           "en": [
+            "Points (light)"
+           ]
+          }
+         },
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno-points-mid.glb",
+          "type": "Model",
+          "format": "model/gltf-binary",
+          "label": {
+           "ja": [
+            "点群（中）"
+           ],
+           "en": [
+            "Points (medium)"
+           ]
+          }
+         },
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno-points-full.glb",
+          "type": "Model",
+          "format": "model/gltf-binary",
+          "label": {
+           "ja": [
+            "点群（高精細）"
+           ],
+           "en": [
+            "Points (full)"
+           ]
+          }
+         }
+        ]
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 0,
+          "y": 0,
+          "z": 0
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#overview",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "label": {
+         "ja": [
+          "全体"
+         ],
+         "en": [
+          "Overview"
+         ]
+        },
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 0,
+          "y": 220,
+          "z": 300
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "annotations": [
+    {
+     "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#georef",
+     "type": "AnnotationPage",
+     "items": [
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#georef/1",
+       "type": "Annotation",
+       "motivation": [
+        "georeferencing"
+       ],
+       "body": {
+        "type": "FeatureCollection",
+        "transformation": {
+         "type": "polynomial",
+         "options": {
+          "order": 1
+         }
+        },
+        "features": [
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#gcp-NW",
+          "properties": {
+           "title": "範囲の北西の角",
+           "resourceCoords": [
+            -128.0,
+            0,
+            -144.0
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7765915,
+            35.7132506
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#gcp-NE",
+          "properties": {
+           "title": "範囲の北東の角",
+           "resourceCoords": [
+            128.0,
+            0,
+            -144.0
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7794208,
+            35.7132519
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#gcp-SE",
+          "properties": {
+           "title": "範囲の南東の角",
+           "resourceCoords": [
+            128.0,
+            0,
+            144.0
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7794226,
+            35.710656
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#gcp-SW",
+          "properties": {
+           "title": "範囲の南西の角",
+           "resourceCoords": [
+            -128.0,
+            0,
+            144.0
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7765933,
+            35.7106547
+           ]
+          }
+         }
+        ]
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+          "type": "Scene"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
