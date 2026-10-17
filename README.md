@@ -34,6 +34,8 @@ manifest では 3 つを `Choice` に軽い順で並べ、`behavior: ["progressi
 | ueno-points-mid.glb | 点群（約 79 万点、0.5 m の立方体ごとに 1 点） | 4.5 MB |
 | ueno-points-full.glb | 点群（約 379 万点、間引きなし） | 17.5 MB |
 
+範囲内の建物のうち、PLATEAU に名前（`gml:name`）がある 3 棟（上野駅・上野警察署上野駅前交番・上野病院）と、いちばん高い建物（62 m）に、屋根の上の印を `commenting` 注釈（`PointSelector`）で付けています。本文は PLATEAU の計測高さです。英語名は手で付けました。印ごとに、斜め上から見る視点を `<注釈の id>/camera` の `PerspectiveCamera` で入れています（3d.ldas.jp は、印を押したときにこの視点へ移ります）。
+
 ## 地図との対応（Georeference）
 
 どちらの manifest にも、地図上の位置と模型上の位置の対応点を、IIIF Georeference Extension の `georeferencing` 注釈で入れています（本郷は注釈を付けた建物ごと、上野は範囲の四隅）。3D の位置（`resourceCoords` が x, y, z の 3 つ）は拡張の仕様にない使い方で、3d.ldas.jp の地図ページ（`/ja/georef?manifest=...`）が読みます。範囲の外形は `navPlace` に入れています。
