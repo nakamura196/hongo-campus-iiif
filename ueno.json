@@ -338,6 +338,82 @@
             35.7106547
            ]
           }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-1/gcp",
+          "properties": {
+           "title": "上野警察署上野駅前交番",
+           "resourceCoords": [
+            -46.88,
+            4.66,
+            -28.41
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7774887,
+            35.7122091
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-2/gcp",
+          "properties": {
+           "title": "上野駅",
+           "resourceCoords": [
+            -89.79,
+            29.92,
+            -107.44
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7770139,
+            35.7129212
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-3/gcp",
+          "properties": {
+           "title": "上野病院",
+           "resourceCoords": [
+            109.41,
+            36.11,
+            67.97
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7792167,
+            35.7113412
+           ]
+          }
+         },
+         {
+          "type": "Feature",
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-4/gcp",
+          "properties": {
+           "title": "この範囲でいちばん高い建物",
+           "resourceCoords": [
+            -12.03,
+            64.08,
+            50.14
+           ]
+          },
+          "geometry": {
+           "type": "Point",
+           "coordinates": [
+            139.7778744,
+            35.7115013
+           ]
+          }
          }
         ]
        },

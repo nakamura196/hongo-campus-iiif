@@ -38,7 +38,7 @@ manifest では 3 つを `Choice` に軽い順で並べ、`behavior: ["progressi
 
 ## 地図との対応（Georeference）
 
-どちらの manifest にも、地図上の位置と模型上の位置の対応点を、IIIF Georeference Extension の `georeferencing` 注釈で入れています（本郷は注釈を付けた建物ごと、上野は範囲の四隅）。3D の位置（`resourceCoords` が x, y, z の 3 つ）は拡張の仕様にない使い方で、3d.ldas.jp の地図ページ（`/ja/georef?manifest=...`）が読みます。範囲の外形は `navPlace` に入れています。
+どちらの manifest にも、地図上の位置と模型上の位置の対応点を、IIIF Georeference Extension の `georeferencing` 注釈で入れています（本郷は注釈を付けた建物ごと、上野は範囲の四隅と印を付けた建物）。3D の位置（`resourceCoords` が x, y, z の 3 つ）は拡張の仕様にない使い方で、3d.ldas.jp の地図ページ（`/ja/georef?manifest=...`）が読みます。範囲の外形は `navPlace` に入れています。
 
 ## 出典とライセンス
 
