@@ -352,6 +352,296 @@
        }
       }
      ]
+    },
+    {
+     "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#buildings",
+     "type": "AnnotationPage",
+     "items": [
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-1",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "上野警察署上野駅前交番"
+        ],
+        "en": [
+         "Ueno Station Police Box"
+        ]
+       },
+       "body": {
+        "type": "TextualBody",
+        "format": "text/plain",
+        "value": "高さ 7.1 m / Height 7.1 m (PLATEAU)"
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -46.88,
+          "y": 6.66,
+          "z": -28.41
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-1/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": -46.88,
+         "y": 4.66,
+         "z": -28.41
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 13.12,
+          "y": 104.66,
+          "z": 121.59
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-2",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "上野駅"
+        ],
+        "en": [
+         "Ueno Station"
+        ]
+       },
+       "body": {
+        "type": "TextualBody",
+        "format": "text/plain",
+        "value": "高さ 21.4 m / Height 21.4 m (PLATEAU)"
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -89.79,
+          "y": 31.92,
+          "z": -107.44
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-2/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": -89.79,
+         "y": 29.92,
+         "z": -107.44
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -29.79,
+          "y": 129.92,
+          "z": 42.56
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-3",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "上野病院"
+        ],
+        "en": [
+         "Ueno Hospital"
+        ]
+       },
+       "body": {
+        "type": "TextualBody",
+        "format": "text/plain",
+        "value": "高さ 34.4 m / Height 34.4 m (PLATEAU)"
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 109.41,
+          "y": 38.11,
+          "z": 67.97
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-3/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": 109.41,
+         "y": 36.11,
+         "z": 67.97
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 169.41,
+          "y": 136.11,
+          "z": 217.97
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-4",
+       "type": "Annotation",
+       "motivation": [
+        "commenting"
+       ],
+       "label": {
+        "ja": [
+         "この範囲でいちばん高い建物"
+        ],
+        "en": [
+         "The tallest building in this area"
+        ]
+       },
+       "body": {
+        "type": "TextualBody",
+        "format": "text/plain",
+        "value": "高さ 62 m / Height 62 m (PLATEAU)"
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": -12.03,
+          "y": 66.08,
+          "z": 50.14
+         }
+        ]
+       }
+      },
+      {
+       "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#building-4/camera",
+       "type": "Annotation",
+       "motivation": [
+        "painting"
+       ],
+       "body": {
+        "type": "PerspectiveCamera",
+        "fieldOfView": 50,
+        "lookAt": {
+         "type": "PointSelector",
+         "x": -12.03,
+         "y": 64.08,
+         "z": 50.14
+        }
+       },
+       "target": {
+        "type": "SpecificResource",
+        "source": [
+         {
+          "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#scene",
+          "type": "Scene"
+         }
+        ],
+        "selector": [
+         {
+          "type": "PointSelector",
+          "x": 47.97,
+          "y": 164.08,
+          "z": 200.14
+         }
+        ]
+       }
+      }
+     ]
     }
    ]
   }
