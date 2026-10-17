@@ -22,6 +22,15 @@
    "The same area of about 260 x 290 m as airborne LiDAR points (surveyed March-April 2023) and as PLATEAU building models (LOD2, textured from aerial photos). Switch between them."
   ]
  },
+ "thumbnail": [
+  {
+   "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno-thumbnail.jpg",
+   "type": "Image",
+   "format": "image/jpeg",
+   "width": 800,
+   "height": 600
+  }
+ ],
  "requiredStatement": {
   "label": {
    "ja": [
@@ -99,6 +108,15 @@
      "Around Ueno station"
     ]
    },
+   "thumbnail": [
+    {
+     "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno-thumbnail.jpg",
+     "type": "Image",
+     "format": "image/jpeg",
+     "width": 800,
+     "height": 600
+    }
+   ],
    "spatialScale": {
     "type": "UnitValue",
     "quantityValue": 1.0,
