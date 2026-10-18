@@ -2,6 +2,7 @@
  "@context": [
   "http://iiif.io/api/extension/georef/1/context.json",
   "http://iiif.io/api/extension/navplace/context.json",
+  "http://iiif.io/api/search/2/context.json",
   "http://iiif.io/api/presentation/4/context.json"
  ],
  "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json",
@@ -990,6 +991,12 @@
      ]
     }
    ]
+  }
+ ],
+ "service": [
+  {
+   "id": "https://iiif-search-demo.ldas.jp/search/ueno",
+   "type": "SearchService2"
   }
  ]
 }
