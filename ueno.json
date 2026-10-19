@@ -538,7 +538,7 @@
           "type": "Feature",
           "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#gcp-NW",
           "properties": {
-           "title": "範囲の北西の角",
+           "title": {"ja": ["範囲の北西の角"], "en": ["Northwest corner of the model"]},
            "resourceCoords": [
             -128.0,
             0,
@@ -557,7 +557,7 @@
           "type": "Feature",
           "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#gcp-NE",
           "properties": {
-           "title": "範囲の北東の角",
+           "title": {"ja": ["範囲の北東の角"], "en": ["Northeast corner of the model"]},
            "resourceCoords": [
             128.0,
             0,
@@ -576,7 +576,7 @@
           "type": "Feature",
           "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#gcp-SE",
           "properties": {
-           "title": "範囲の南東の角",
+           "title": {"ja": ["範囲の南東の角"], "en": ["Southeast corner of the model"]},
            "resourceCoords": [
             128.0,
             0,
@@ -595,7 +595,7 @@
           "type": "Feature",
           "id": "https://nakamura196.github.io/hongo-campus-iiif/ueno.json#gcp-SW",
           "properties": {
-           "title": "範囲の南西の角",
+           "title": {"ja": ["範囲の南西の角"], "en": ["Southwest corner of the model"]},
            "resourceCoords": [
             -128.0,
             0,
